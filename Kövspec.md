@@ -30,6 +30,23 @@ Megakadályozza hogy a kevés social credittel rendelkezők álhíreket terjessz
 
 # 4. Igényelt üzleti folyamatok
 
+4.1. Igényelt funkciók
+4.1.1. Fiók regisztráció
+4.1.2. Fiók adatainak mentése (név,jelszó)
+4.1.3. Hírportálon való cikkírás
+4.1.4. Fiókhoz rendelt social credit
+4.1.5. Fiókon lévő hírírás blokkolása alacsony social credit szintnél
+4.1.6. Fiók törlése nagyon alacsony social credit szintnél
+
 # 5. Rendszerre vonatkozó szabályok
 
 # 6. Követelménylista
+   |   Modul   |   ID  |   Név |   version |   Kifejtés    |
+   |:----------|:------|:------|:----------|:--------------|
+   |    Jogosultság |   1   |   Regisztráció    |   1.0 | Felhasználói fiók létrehozása  |
+   |    Adatkezelés |   2   |   Adat mentése    |   1.0 |   Regisztrált adatok mentése adatbázisban |
+   |   Jogosultság |   3  |    Bejelentkezés   |   1.0 |   A felhasználó a felhasználói nevével illetve jelszó párossal bejelentkezhet. Ha a felhasználónév illetve a jelszó páros nem megfelelő, hibaüzenetet kap. |
+   |   Jogosultság |   4   |   Hírírás   |   1.0 |   A felhasználó hírt írhat az oldalon, ami alapján social credit számát növeli/csökkenti. |
+   |   Adatkezelés |   5   | Social credit |   1.0 |   A felhasználó social creditet kap vagy veszít a hírének validációja alapján.   |
+|   Adatkezelés    |   6   |   Hírírás jogának elvétele   |   1.0 |   A felhasználói fiók elveszíti hírírási jogát alacsony social credit szintnél.    |
+   |   Adatkezelés    |   7   |   Account törlése   |   1.0 |   A felhasználói fiók törlésre kerül nagyon alacsony social credit szintnél.    |
