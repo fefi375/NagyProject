@@ -30,7 +30,7 @@ Megakadályozza hogy a kevés social credittel rendelkezők álhíreket terjessz
 
 # 4. Igényelt üzleti folyamatok
 
-4.1. Igényelt funkciók
+4.1. Igényelt folyamatok
 4.1.1. Fiók regisztráció
 4.1.2. Fiók adatainak mentése (név,jelszó)
 4.1.3. Hírportálon való cikkírás
@@ -50,3 +50,8 @@ Megakadályozza hogy a kevés social credittel rendelkezők álhíreket terjessz
    |   Adatkezelés |   5   | Social credit |   1.0 |   A felhasználó social creditet kap vagy veszít a hírének validációja alapján.   |
 |   Adatkezelés    |   6   |   Hírírás jogának elvétele   |   1.0 |   A felhasználói fiók elveszíti hírírási jogát alacsony social credit szintnél.    |
    |   Adatkezelés    |   7   |   Account törlése   |   1.0 |   A felhasználói fiók törlésre kerül nagyon alacsony social credit szintnél.    |
+
+# 7. Fogalomtár
+
+- **Adatbázis**: Az adatbázis egy strukturált adattároló, amely lehetővé teszi adatok rendszerezett, biztonságos és hatékony tárolását, lekérdezését és kezelését (Név, jelszó).
+- **Social credit**: A social credit egy olyan rendszer, amely a polgárok viselkedését és tevékenységeit értékeli, gyakran pontozás vagy rangsorolás alapján. Ezt a rendszert legjobban Kínában ismerik, ahol a kormány különböző adatokat gyűjt a polgárokról, például a pénzügyi viselkedésükről, a közlekedési szabálysértéseikről, és a közösségi médiában való aktivitásukról. A célja, hogy ösztönözze a "jó" viselkedést és csökkentse a "rossz" viselkedést, például a törvényszegéseket.
