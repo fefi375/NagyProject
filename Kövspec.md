@@ -30,13 +30,15 @@ Megakadályozza hogy a kevés social credittel rendelkezők álhíreket terjessz
 
 # 4. Igényelt üzleti folyamatok
 
-4.1. Igényelt folyamatok
-4.1.1. Fiók regisztráció
-4.1.2. Fiók adatainak mentése (név,jelszó)
-4.1.3. Hírportálon való cikkírás
-4.1.4. Fiókhoz rendelt social credit
-4.1.5. Fiókon lévő hírírás blokkolása alacsony social credit szintnél
-4.1.6. Fiók törlése nagyon alacsony social credit szintnél
+- 4.1. Igényelt folyamatok
+   - 4.1.1. Jogosultság
+      - 4.1.1.1. Fiók regisztráció
+      - 4.1.1.2. Hírportálon való cikkírás
+   - 4.1.2. Adatkezelés
+      - 4.1.2.1. Fiók adatainak mentése
+      - 4.1.2.2. Fiókhoz social credit rendelése
+      - 4.1.2.3. Fiókon lévő hírírás blokkolása alacsony social credit szintnél
+      - 4.1.2.4. Fiók törlése nagyon alacsony social credit szintnél
 
 # 5. Rendszerre vonatkozó szabályok
 
