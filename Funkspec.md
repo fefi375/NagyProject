@@ -22,7 +22,6 @@ Ez nagyban megnehezíti hogy megvédjük olvasóinkat az álhírektől és félr
 
 Ennek érdekében, egy olyan automata rendszer mely automatikusan észleli az álhírek és különböző információk jelenlétét, majd javítja azokat. A túl sok ilyen híreket feltöltő fiókokat is észleli és korlátozza hírfeltöltésüket vagy akár fiókjukat is felfüggeszheti.
 
-Ez nagyban megnehezíti hogy megvédjük olvasóinkat az álhírektől és félreinformálásoktól.
 
 Ennek érdekében egy olyan automata rendszer mely automatikusan észleli az álhírek és különböző információk jelenlétét, majd javítja azokat. A túl sok ilyen híreket feltöltő fiókokat is észleli és korlátozza hírfeltöltésüket vagy akár fiókjukat is függeszti.
 # 3. Követelménylista
@@ -48,6 +47,7 @@ Ennek érdekében egy olyan automata rendszer mely automatikusan észleli az ál
 4.1.6. Fiók törlése nagyon alacsony social credit szintnél
 
 # 6. Használati esetek
+Az országban az első számú, legmegbízhatóbb hírportállá nőheti ki magát az OI hírportál ha az automata észlelő rendszer implementálásra kerül. Sokkal több felhasználó, sokkal gyorsabban tehet közzé híreket és mi sokkal gyorsabban tudjuk ellenőrizni azok hitelességét. Ezért hírportálunk mind országszerte mind nemzetközi szinten hamar populárissá válhat.
 
 # 7. Megfeleltetés
 
