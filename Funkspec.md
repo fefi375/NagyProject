@@ -50,9 +50,21 @@ Ennek érdekében egy olyan automata rendszer mely automatikusan észleli az ál
 Az országban az első számú, legmegbízhatóbb hírportállá nőheti ki magát az OI hírportál ha az automata észlelő rendszer implementálásra kerül. Sokkal több felhasználó, sokkal gyorsabban tehet közzé híreket és mi sokkal gyorsabban tudjuk ellenőrizni azok hitelességét. Ezért hírportálunk mind országszerte mind nemzetközi szinten hamar populárissá válhat.
 
 # 7. Megfeleltetés
+Az alkalmazás használatához a felhasználónak először egy fiókot kell regisztrálnia, amelyhez feltétel, hogy rendelkezzen egy érvényes email címmel.
+
+A regisztráció befejezése után a felhasználó hozzáférhet a hírportál egyes funkcióihoz, kivéve azokhoz melyekhez admin jogosultság szükséges. A sikeres regisztrációt követően a felhasználó az általa megadott felhasználónév és jelszó kombinációjával léphet be a rendszerbe. A belépési folyamat során a rendszer ellenőrzi a megadott adatokat, és ha azok helyesek, a felhasználó számára megnyílik portál főmenüje.
+- Ebben a menüben a felhasználó több lehetőség közül választhat:
+   - láthatja a mások által megosztott híreket
+   - hírt tölthet fel az oldalra, amennyiben elegendő social credittel rendelkezik
+
+A portál a felhasználóknak egyszerű kezelést és megfelelő biztonságot nyújt ellenőrzött és szabályozott információkkal. A híreket közzétenni csak megbízható fiókoknak lehet, amelyet egy social credit pontszám határoz meg. A nem bízható (vagyis kevés pontszámmal rendlekező) fiókokat először elzárjuk a további hírek közzétételétől, majd töröljük.
+   
+
+
 
 # 8. Képernyőtervek
 
 # 9. Forgatókönyv
 
 # 10. Funkció
+
