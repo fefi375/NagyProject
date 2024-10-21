@@ -68,3 +68,10 @@ A portál a felhasználóknak egyszerű kezelést és megfelelő biztonságot ny
 
 # 10. Funkció
 
+Az alábbi funkciók kerülnek megvalósításra a hírportálon, amelyek biztonságosabbá, gyorsabbá és effektívebbé teszik a hírek böngészését felhasználóink számára:
+- **Új fiók létrehozása -> social kredit hozzáadása a fiókhoz: Új fiók létrehozáa esetén, a felhasználó egy adott összegű spcial creditet kap. Ez mutatja hogy a felhasználó megbízható forrás, ezért posztolhat a portálra.**
+- **Automatikus bejelentkezés: A fiók sikeres létrehozása után az applikáció automatikusan bejelentkezteti a felhasználót, majd megjeleníti a főmenüt, ahonnan további funkciókat érhet el.**
+- **Credit kezelése: Ha a rendszer a felhasználó híreit hamisnak ítéli, a fiókjától social kredit pontokat vesz el, ezzel figyelmezteti/csökkenti a jogusultságait a felhasználónak.**
+- **Fiók korlátozása: Ha a creditszám elég alacsony a rendszer automatikusan megszünteti a felhasználó posztolási lehetőségét.**
+- **Fiók törlése: Ha a social credit elég alacsony, a fiók automatikusan törlődni fog a portálról.**
+- **Kijelentkezés: A felhasználónak lehetősége van kijelentkezni a rendszerből, amely visszaviszi őt a kezdőmenübe. Innen új fiókot hozhat létre, vagy bejelentkezhet egy másik fiókba. A kijelentkezési funkció biztosítja, hogy a felhasználói adatok védelme érdekében a munkamenet biztonságosan lezáruljon.**
