@@ -35,7 +35,11 @@ Ennek érdekében egy olyan automata rendszer mely automatikusan észleli az ál
 |   Adatkezelés    |   6   |   Hírírás jogának elvétele   |   1.0 |   A felhasználói fiók elveszíti hírírási jogát alacsony social credit szintnél.    |
    |   Adatkezelés    |   7   |   Account törlése   |   1.0 |   A felhasználói fiók törlésre kerül nagyon alacsony social credit szintnél.    |
 # 4. Jelenlegi üzleti folyamatok modellje
-
+3.1 Fiók regisztrálása
+3.2 Fiók adatainak mentése (név, jelszó)
+3.3 Bármelyik fiók bármennyi hírt tehet közzé az oldalon
+3.4 Moderátorok végzik a hírek ellenőrzését és igazságtartalmát
+3.5 A túl sok hamis hírt terjesztő fiókot moderátoraink manuálisan bannolhatják
 # 5. Igényelt üzleti folyamatok modellje
 
 4.1. Igényelt funkciók
