@@ -35,20 +35,24 @@ Ennek érdekében egy olyan automata rendszer mely automatikusan észleli az ál
 |   Adatkezelés    |   6   |   Hírírás jogának elvétele   |   1.0 |   A felhasználói fiók elveszíti hírírási jogát alacsony social credit szintnél.    |
    |   Adatkezelés    |   7   |   Account törlése   |   1.0 |   A felhasználói fiók törlésre kerül nagyon alacsony social credit szintnél.    |
 # 4. Jelenlegi üzleti folyamatok modellje
-3.1 Fiók regisztrálása
-3.2 Fiók adatainak mentése (név, jelszó)
-3.3 Bármelyik fiók bármennyi hírt tehet közzé az oldalon
-3.4 Moderátorok végzik a hírek ellenőrzését és igazságtartalmát
-3.5 A túl sok hamis hírt terjesztő fiókot moderátoraink manuálisan bannolhatják
+
+- 3.1 Fiók regisztrálása
+- 3.2 Fiók adatainak mentése (név, jelszó)
+- 3.3 Bármelyik fiók bármennyi hírt tehet közzé az oldalon
+- 3.4 Moderátorok végzik a hírek ellenőrzését és igazságtartalmát
+- 3.5 A túl sok hamis hírt terjesztő fiókot moderátoraink manuálisan bannolhatják
+
 # 5. Igényelt üzleti folyamatok modellje
 
-4.1. Igényelt funkciók
-4.1.1. Fiók regisztráció
-4.1.2. Fiók adatainak mentése (név,jelszó)
-4.1.3. Hírportálon való cikkírás
-4.1.4. Fiókhoz rendelt social credit
-4.1.5. Fiókon lévő hírírás blokkolása alacsony social credit szintnél
-4.1.6. Fiók törlése nagyon alacsony social credit szintnél
+- 4.1. Igényelt folyamatok
+   - 4.1.1. Jogosultság
+      - 4.1.1.1. Fiók regisztráció
+      - 4.1.1.2. Hírportálon való cikkírás
+   - 4.1.2. Adatkezelés
+      - 4.1.2.1. Fiók adatainak mentése
+      - 4.1.2.2. Fiókhoz social credit rendelése
+      - 4.1.2.3. Fiókon lévő hírírás blokkolása alacsony social credit szintnél
+      - 4.1.2.4. Fiók törlése nagyon alacsony social credit szintnél
 
 # 6. Használati esetek
 Az országban az első számú, legmegbízhatóbb hírportállá nőheti ki magát az OI hírportál ha az automata észlelő rendszer implementálásra kerül. Sokkal több felhasználó, sokkal gyorsabban tehet közzé híreket és mi sokkal gyorsabban tudjuk ellenőrizni azok hitelességét. Ezért hírportálunk mind országszerte mind nemzetközi szinten hamar populárissá válhat.
