@@ -28,6 +28,12 @@ Megakadályozza hogy a kevés social credittel rendelkezők álhíreket terjessz
 
 # 3. Jelenlegi üzleti folyamatok
 
+- 3.1 Fiók regisztrálása
+- 3.2 Fiók adatainak mentése (név, jelszó)
+- 3.3 Bármelyik fiók bármennyi hírt tehet közzé az oldalon
+- 3.4 Moderátorok végzik a hírek ellenőrzését és igazságtartalmát
+- 3.5 A túl sok hamis hírt terjesztő fiókot moderátoraink manuálisan bannolhatják
+
 # 4. Igényelt üzleti folyamatok
 
 - 4.1. Igényelt folyamatok
