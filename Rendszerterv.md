@@ -14,13 +14,63 @@
 
 # 1. Rendszer célja
 
+A hírportál célja egy olyan platform létrehozása, ahol a felhasználók regisztrálhatnak, bejelentkezhetnek, híreket írhatnak, és ezzel social credit rendszert használhatnak. A rendszer célja a minőségi tartalom előmozdítása és a felhasználói közösség felelősségteljes viselkedésének ösztönzése.
+
 # 2. Projektterv
+
+- **Felhasználói interfész létrehozása**
+    - Home screen
+    - Regisztrálás
+    - Bejelentkezés
+    - Hírírás
+    - Aktivitás ellenőrzés
+- **Social credit mechanizmus kidolgozása**
+    - Fiókjogok állítása social credit alapján:
+        - Alacsony szintnél hírírás jogának elvétele.
+        - Nagyon alacsony szintnél fiók törlése.
+
 
 # 3. Üzleti folyamatok modellje
 
+1. **Felhasználói regisztráció**:
+    - A felhasználó megadja a szükséges adatokat.
+    - A szükséges adatok közé tartozik a név, e-mail cím, jelszó.
+    - Ezek az adatok adatbázisban kerülnek mentésre.
+
+2. **Bejelentkezés**:
+    - A felhasználó a regisztrált e-mail címével és jelszavával tud belépni.
+    - A rendszer az adatbázisban tárolt adatokat ellenőrzi a bejelentkezés során.
+3. **Anonymous felhasználó**:
+    - Az anonymous felhasználók a nem regisztrált, nem bejelentkezett felhasználók.
+    - Az anonymous felhaszálók olvashatják a közzé tett híreket, de nem reagálhatnak rájuk.
+    - Az anonymous felhasználók nem írhatnak híreket.
+3. **Hírírás**:
+    - A felhasználó hírt írhat a portálon, amit közzé tehet az oldalon.
+    - A felhasználó által írt híreket minden felhasználó, illetve anonym felhasználó olvashatja.
+4. **Social credit**:
+    - A regisztrált felhasználók social creditet szerezhetnek illetve veszíthetnek el.
+    - Alacsony social credit szintnél a felhasználó elveszti hírírási jogát.
+    - Nagyon alacsony social credit szintnél a felhasználó fiókja törlődik.
+
 # 4. Követelmények
 
+1. ### **Funkcionális követelmények**:
+    - Regisztrációs és bejelentkezési rendszer.
+    - Hírek írásának és olvasásának funkciója.
+    - Social credit rendszer integrálása.
+2. ### **Nem funkcionális követelmények**:
+    - Magas szintű biztonság.
+    - Felhasználóbarát felület.
+    - Teljesítmény és skálázhatóság.
+
 # 5. Funkcionális terv
+
+### **A rendszer fő funkciói a következők**:
+
+- Felhasználói fiók létrehozása, kezelése.
+- Hírek létrehozása ás publikálása az oldalon.
+- Social credit nyomon követése és kezelése.
+- Statisztikák és riportok készítése a felhasználók aktivitásáról.
 
 # 6. Fizikai környezet
 
@@ -39,3 +89,7 @@
 # 13. Képernyő terv
 
 # 14. Fogalomtár
+
+- **Adatbázis**: Az adatbázis egy strukturált adattároló, amely lehetővé teszi adatok rendszerezett, biztonságos és hatékony tárolását, lekérdezését és kezelését (Név, jelszó).
+- **Social credit**: A social credit egy olyan rendszer, amely a polgárok viselkedését és tevékenységeit értékeli, gyakran pontozás vagy rangsorolás alapján. Ezt a rendszert legjobban Kínában ismerik, ahol a kormány különböző adatokat gyűjt a polgárokról, például a pénzügyi viselkedésükről, a közlekedési szabálysértéseikről, és a közösségi médiában való aktivitásukról. A célja, hogy ösztönözze a "jó" viselkedést és csökkentse a "rossz" viselkedést, például a törvényszegéseket.
+- **Anonymous user**: Azok a felhasználók, akik rátekintenek az oldalra, de nem jelentkeznek be. Limitált jogokkal rendelkeznek (pl.: hírolvasás). 
