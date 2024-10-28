@@ -74,11 +74,25 @@ A hírportál célja egy olyan platform létrehozása, ahol a felhasználók reg
 
 # 6. Fizikai környezet
 
+
 # 7. Architekturális terv
 
 # 8. Adatbázis terv
 
 # 9. Implementációs terv
+1. **Kezdeti fejlesztés**:
+    - A felhasználói regisztráció, bejelentkezés létrehozása.
+    - Adatbázis implementálása a felhasználói adatok tárolására
+    - GUI fejlesztése.
+2. **Funkcionális fejlesztés**:
+    - Az hírek közzétételének, social credit manipulálásának, nem megbízható források letiltásának implementálása.<br>
+4. **Tesztelés**:
+    - Minden funkció tesztelése különböző felhasználói forgatókönyvekkel.<br>
+5. **Finomítás**:
+    - Az esetleges hibák javítása és az alkalmazás teljesítményének optimalizálása.
+    - A fejlesztés során folyamatosan figyelemmel kísérjük a kód minőségét és a legjobb gyakorlatokat alkalmazzuk, hogy a karbantartás és a további fejlesztések a jövőben zökkenőmentesen valósuljanak meg, végig törekedünk a tiszta kódra.
+6. **Verziókezelés**:
+    - A projekt során verziókezelő rendszert használunk a kód nyomon követésére és a csapatmunkához való alkalmazkodás érdekében.
 
 # 10. Tesztterv
 
