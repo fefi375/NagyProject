@@ -73,6 +73,15 @@ A portál a felhasználóknak egyszerű kezelést és megfelelő biztonságot ny
 # 8. Képernyőtervek
 
 # 9. Forgatókönyv
+A felhasználó regisztálhat a hírportálra, amelyet követően a helyesen megadott felhasználónév és jelszó kombinációjával az oldal belépést biztosít a felületre. A regisztrációt követően a felhasználó automatikusan kap egy adott számú social credit pontszámot amely a fiók hitelességét jelzi.
+
+A felhasználói felület úgy lett kialakítva, hogy könnyedén átlátható és kezelhető legyen, még azok számára is, akik nem rendelkeznek magas szintű technikai tudással. A hírek megjelennek a főoldalon, ahol könnyedén lehet új hírt hozzáadni.
+
+A híreket az alkalmazás automatikusan ellenőrzi és a nem elfogadható hírek esetén attól a felhasználótól, aki a hírt közzétette adott számú social credit pontszámot vesz el. A nem elegendő social creditel rendelkező fiókok nem tehetnek közzé híreket, majd fiókjuk törlésre is kerülhet.
+
+A hírportál lehetővé teszi a felhasználók számára a könnyű tájékozódást, egyszerű felhasználói felületet és hatékony hírfeltöltést biztosít.A közzétett hírek azonnal láthatóvá válnak a felületen.
+
+
 
 # 10. Funkció
 
