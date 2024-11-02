@@ -15,6 +15,27 @@ def get_db_connection():
 def home():
     return render_template('index.html')
 
+#Regisztráció
+@app.route('/create_account', methods=['POST'])
+def create_account():
+    username = request.form['username']
+    password = request.form['password']
+
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    try:
+        # Insert new user into the database with default credit of 500
+        cursor.execute('INSERT INTO users (username, password, credit) VALUES (?, ?, ?)', (username, password, 500))
+        conn.commit()
+        flash("Account created successfully! Please log in.")
+    except sqlite3.IntegrityError:
+        flash("Username already taken. Please choose another.")
+    finally:
+        conn.close()
+
+    return redirect(url_for('home'))
+
 # Bejelentkezés
 @app.route('/login', methods=['POST'])
 def login():
