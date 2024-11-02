@@ -9,3 +9,8 @@ def get_db_connection():
     conn = sqlite3.connect('user_data.db')
     conn.row_factory = sqlite3.Row
     return conn
+
+# A főoldalra vezető út
+@app.route('/')
+def home():
+    return render_template('index.html')
