@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Portal</title>
+</head>
+<body>
+    <h1>Welcome to the News Portal, {{ session['username'] }}!</h1>
+
+    <p><a href="{{ url_for('upload_article') }}">Upload a new article</a></p>
+    <p><a href="{{ url_for('logout') }}">Logout</a></p>
+
+    <h2>Articles</h2>
+    <ul>
+        {% for article in articles %}
+            <li><a href="{{ url_for('article', article_id=article['id']) }}">{{ article['title'] }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
