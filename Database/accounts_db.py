@@ -13,3 +13,9 @@ CREATE TABLE IF NOT EXISTS users (
     credit REAL DEFAULT 0
 )
 ''')
+
+# commitolás és kapcsolat lezárása
+conn.commit()
+conn.close()
+
+print("Database and table created successfully!")
