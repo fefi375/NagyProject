@@ -35,3 +35,26 @@ def create_account():
         conn.close()
 
     return redirect(url_for('home'))
+
+
+# Bejelentkezetető oldal kezelése
+@app.route('/login', methods=['POST'])
+def login():
+    username = request.form['username']
+    password = request.form['password']
+
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM users WHERE username = ? AND password = ?', (username, password))
+    user = cursor.fetchone()
+    conn.close()
+
+    if user:
+        flash(f"Welcome back, {username}! Your current credit is {user['credit']}.")
+    else:
+        flash("Invalid username or password. Please try again.")
+
+    return redirect(url_for('home'))
+
+if __name__ == '__main__':
+    app.run(debug=True)
