@@ -14,6 +14,18 @@ CREATE TABLE IF NOT EXISTS users (
 )
 ''')
 
+# cikk táblázat létrehozása
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS articles (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    content TEXT NOT NULL,
+    author_id INTEGER,
+    FOREIGN KEY (author_id) REFERENCES users(id)
+)
+''')
+
+
 # commitolás és kapcsolat lezárása
 conn.commit()
 conn.close()
