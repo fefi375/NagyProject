@@ -47,6 +47,12 @@ Megakadályozza hogy a kevés social credittel rendelkezők álhíreket terjessz
       - 4.1.2.4. Fiók törlése nagyon alacsony social credit szintnél
 
 # 5. Rendszerre vonatkozó szabályok
+- Hírek Moderálása: Minden közzétett hírnek át kell esnie automatikus és manuális ellenőrzésen.
+- Fiókhoz Rendelt Social Credit: Minden felhasználónak rendelkeznie kell egy social credit pontszámmal, amely a tevékenységeik alapján változik.
+- Alacsony Social Credit Szint: Az alacsony social credit szinttel rendelkező felhasználók hírírási jogát meg kell vonni.
+- Fiók Törlése: Azok a fiókok, akiknek a social credit szintje rendkívül alacsony, automatikusan törlésre kerülnek.
+- Álhírek észlelése: Az automatikus rendszernek képesnek kell lennie az álhírek azonosítására.
+- Fiók Használati Szabályok: A felhasználók kötelesek betartani a közösségi irányelveket, különben fiókjuk felfüggesztésre kerülhet.
 
 # 6. Követelménylista
    |   Modul   |   ID  |   Név |   version |   Kifejtés    |
