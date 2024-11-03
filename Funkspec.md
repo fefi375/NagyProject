@@ -15,6 +15,8 @@
 
 # 1. Áttekintés
 
+Az OI hírportál célja, hogy megbízható és hiteles információt nyújtson a felhasználóknak, védve őket az álhírek és félreinformálások ellen. A rendszer fejlesztésével az automatizált hírészlelés és -kezelés bevezetése a fő irányvonal, amely lehetővé teszi, hogy a moderátorok helyett egy intelligens rendszer végezze el a hírek szűrését. Az új rendszer a felhasználói fiókok social credit rendszerén alapul, amely értékeli a felhasználók hozzájárulását a portál hitelességéhez.
+
 # 2. Jelenlegi helyzet
 Az OI hírportál egy olyan internetes hírlap, mely megvédi felhasználóit az álhírekről, veszélyes információktól és félreinformálásoktól. Pontosan ezért az ehhez hasonló híreket és információkat töröljük az oldalon. Eddig ezt moderátoraink tették, viszont már nincs elég nagy kapacitásunk, hogy minden egyes hírt átnézzünk.
 
