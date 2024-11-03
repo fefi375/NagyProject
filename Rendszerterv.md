@@ -130,6 +130,7 @@ A hírportál architektúrája a következő elemekből áll:
 
 
 # 9. Implementációs terv
+
 1. **Kezdeti fejlesztés**:
     - A felhasználói regisztráció, bejelentkezés létrehozása.
     - Adatbázis implementálása a felhasználói adatok tárolására
@@ -192,4 +193,5 @@ A karbantartási terv a következőket foglalja magában:
 - **GUI**: A GUI (Graphical User Interface) egy vizuális felhasználói interfész, amely lehetővé teszi a felhasználók számára, hogy grafikus elemek, például ikonok, gombok és ablakok segítségével interakcióba lépjenek a számítógépes programokkal.
 - **Adatbázis**: Az adatbázis egy strukturált adattároló, amely lehetővé teszi adatok rendszerezett, biztonságos és hatékony tárolását, lekérdezését és kezelését (Név, jelszó).
 - **Social credit**: A social credit egy olyan rendszer, amely a polgárok viselkedését és tevékenységeit értékeli, gyakran pontozás vagy rangsorolás alapján. Ezt a rendszert legjobban Kínában ismerik, ahol a kormány különböző adatokat gyűjt a polgárokról, például a pénzügyi viselkedésükről, a közlekedési szabálysértéseikről, és a közösségi médiában való aktivitásukról. A célja, hogy ösztönözze a "jó" viselkedést és csökkentse a "rossz" viselkedést, például a törvényszegéseket.
-- **Anonymous user**: Azok a felhasználók, akik rátekintenek az oldalra, de nem jelentkeznek be. Limitált jogokkal rendelkeznek (pl.: hírolvasás). 
+- **Anonymous user**: Azok a felhasználók, akik rátekintenek az oldalra, de nem jelentkeznek be. Limitált jogokkal rendelkeznek (pl.: hírolvasás).
+- **Hálózati infrastruktúra**: A hálózati infrastruktúra a számítógépes rendszerek és eszközök közötti kapcsolatokat biztosítja, lehetővé téve az adatok átvitelét és a kommunikációt. Ez magában foglalja a fizikai eszközöket, mint például a routerek, switch-ek, tűzfalak és kábelek, valamint a szoftveres megoldásokat, amelyek a hálózati forgalom kezelését segítik.
