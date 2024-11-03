@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Creation and Login</title>
+    <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-    <h1>Account Management</h1>
-
     <!-- üzenet megjelenítő -->
-    {% with messages = get_flashed_messages() %}
+ <!--   {% with messages = get_flashed_messages() %}
         {% if messages %}
             <ul>
                 {% for message in messages %}
@@ -18,29 +17,20 @@
             </ul>
         {% endif %}
     {% endwith %}
-
+        -->
     <!-- fiók létrehozó űrlap -->
+
+    <div>
     <h2>Create an Account</h2>
     <form action="{{ url_for('create_account') }}" method="POST">
-        <label for="username">Username:</label>
+        <label for="username">Username</label>
         <input type="text" id="username" name="username" required>
         <br>
-        <label for="password">Password:</label>
+        <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
         <br>
         <button type="submit">Create Account</button>
     </form>
-
-    <!-- bejelentkezési űrlap -->
-    <h2>Login</h2>
-    <form action="{{ url_for('login') }}" method="POST">
-        <label for="login-username">Username:</label>
-        <input type="text" id="login-username" name="username" required>
-        <br>
-        <label for="login-password">Password:</label>
-        <input type="password" id="login-password" name="password" required>
-        <br>
-        <button type="submit">Login</button>
-    </form>
+    </div>
 </body>
 </html>
