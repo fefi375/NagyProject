@@ -90,32 +90,35 @@ Adatbázis: Relációs adatbázis (SQLite) a felhasználói adatok és hírek t�
 
 # 8. Adatbázis terv
 
+- **8.1 Adatbázis táblák**
 1. **users tábla**
-- **id**: Egyedi azonosító, amely automatikusan növekszik (INTEGER PRIMARY KEY AUTOINCREMENT).
-- **username**: A felhasználónevet tároló mező, amely nem lehet üres (TEXT NOT NULL).
-- **password**: A jelszót tároló mező, amely nem lehet üres (TEXT NOT NULL).
-- **credit**: A felhasználó egyenlegét tároló mező, alapértelmezett értéke 500 (REAL DEFAULT 500).
+    - **id**: Egyedi azonosító, amely automatikusan növekszik (INTEGER PRIMARY KEY AUTOINCREMENT).
+    - **username**: A felhasználónevet tároló mező, amely nem lehet üres (TEXT NOT NULL).
+    - **password**: A jelszót tároló mező, amely nem lehet üres (TEXT NOT NULL).
+    - **credit**: A felhasználó egyenlegét tároló mező, alapértelmezett értéke 500 (REAL DEFAULT 500).
 
 2. **articles tábla**
-- **id**: Egyedi azonosító, amely automatikusan növekszik (INTEGER PRIMARY KEY AUTOINCREMENT).
-- **title**: A cikk címe, amely nem lehet üres (TEXT NOT NULL).
-- **content**: A cikk tartalma, amely nem lehet üres (TEXT NOT NULL).
-- **author_id**: Az író azonosítója, amely egy külső kulcs a users táblából (INTEGER, FOREIGN KEY REFERENCES users(id)).
+    - **id**: Egyedi azonosító, amely automatikusan növekszik (INTEGER PRIMARY KEY AUTOINCREMENT).
+    - **title**: A cikk címe, amely nem lehet üres (TEXT NOT NULL).
+    - **content**: A cikk tartalma, amely nem lehet üres (TEXT NOT NULL).
+    - **author_id**: Az író azonosítója, amely egy külső kulcs a users táblából (INTEGER, FOREIGN KEY REFERENCES users(id)).
+
+- **8.2 Adatbázis ábra**
+
+    ![Adatbázis_kép](Képernyőtervek/Adatbazis_Diagram.PNG "Adatbázis_diagram_kép")
 
 
+- **8.3 Adatbázis kapcsolatok**
+    - A articles tábla author_id mezője kapcsolódik a users tábla id mezőjéhez, ami lehetővé teszi, hogy minden cikkhez egy szerzőt rendeljünk.
 
+- **8.4 Használati esetek**
+    - A felhasználók regisztrálhatnak és jelszót választhatnak.
+    - Cikkek létrehozása és tárolása a felhasználók által.
 
-3. **Kapcsolatok**
-- A articles tábla author_id mezője kapcsolódik a users tábla id mezőjéhez, ami lehetővé teszi, hogy minden cikkhez egy szerzőt rendeljünk.
-
-4. **Használati esetek**
-- A felhasználók regisztrálhatnak és jelszót választhatnak.
-- Cikkek létrehozása és tárolása a felhasználók által.
-
-5. **Fejlesztési lehetőségek**
-- Cikkek módosítása/törlése.
-- Commentek a cikkhez.
-- Reakciók a cikkhez (Emoji).
+- **8.5 Fejlesztési lehetőségek**
+    - Cikkek módosítása/törlése.
+    - Commentek a cikkhez.
+    - Reakciók a cikkhez (Emoji).
 
 
 # 9. Implementációs terv
