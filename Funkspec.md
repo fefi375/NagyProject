@@ -15,7 +15,11 @@
 
 # 1. Áttekintés
 
-Az OI hírportál célja, hogy megbízható és hiteles információt nyújtson a felhasználóknak, védve őket az álhírek és félreinformálások ellen. A rendszer fejlesztésével az automatizált hírészlelés és -kezelés bevezetése a fő irányvonal, amely lehetővé teszi, hogy a moderátorok helyett egy intelligens rendszer végezze el a hírek szűrését. Az új rendszer a felhasználói fiókok social credit rendszerén alapul, amely értékeli a felhasználók hozzájárulását a portál hitelességéhez.
+Az OI hírportál célja, hogy megbízható és hiteles információt nyújtson a felhasználóknak, védve őket az álhírek és félreinformálások ellen.
+
+A rendszer fejlesztésével az automatizált hírészlelés és -kezelés bevezetése a fő irányvonal, amely lehetővé teszi, hogy a moderátorok helyett egy intelligens rendszer végezze el a hírek szűrését.
+
+Az új rendszer a felhasználói fiókok social credit rendszerén alapul, amely értékeli a felhasználók hozzájárulását a portál hitelességéhez.
 
 # 2. Jelenlegi helyzet
 Az OI hírportál egy olyan internetes hírlap, mely megvédi felhasználóit az álhírekről, veszélyes információktól és félreinformálásoktól. Pontosan ezért az ehhez hasonló híreket és információkat töröljük az oldalon. Eddig ezt moderátoraink tették, viszont már nincs elég nagy kapacitásunk, hogy minden egyes hírt átnézzünk.
@@ -24,8 +28,6 @@ Ez nagyban megnehezíti hogy megvédjük olvasóinkat az álhírektől és félr
 
 Ennek érdekében, egy olyan automata rendszer mely automatikusan észleli az álhírek és különböző információk jelenlétét, majd javítja azokat. A túl sok ilyen híreket feltöltő fiókokat is észleli és korlátozza hírfeltöltésüket vagy akár fiókjukat is felfüggeszheti.
 
-
-Ennek érdekében egy olyan automata rendszer mely automatikusan észleli az álhírek és különböző információk jelenlétét, majd javítja azokat. A túl sok ilyen híreket feltöltő fiókokat is észleli és korlátozza hírfeltöltésüket vagy akár fiókjukat is függeszti.
 # 3. Követelménylista
    |   Modul   |   ID  |   Név |   version |   Kifejtés    |
    |:----------|:------|:------|:----------|:--------------|
@@ -62,12 +64,16 @@ Az országban az első számú, legmegbízhatóbb hírportállá nőheti ki mag�
 # 7. Megfeleltetés
 Az alkalmazás használatához a felhasználónak először egy fiókot kell regisztrálnia, amelyhez feltétel, hogy rendelkezzen egy érvényes email címmel.
 
-A regisztráció befejezése után a felhasználó hozzáférhet a hírportál egyes funkcióihoz, kivéve azokhoz melyekhez admin jogosultság szükséges. A sikeres regisztrációt követően a felhasználó az általa megadott felhasználónév és jelszó kombinációjával léphet be a rendszerbe. A belépési folyamat során a rendszer ellenőrzi a megadott adatokat, és ha azok helyesek, a felhasználó számára megnyílik portál főmenüje.
+A regisztráció befejezése után a felhasználó hozzáférhet a hírportál egyes funkcióihoz, kivéve azokhoz melyekhez admin jogosultság szükséges. A sikeres regisztrációt követően a felhasználó az általa megadott felhasználónév és jelszó kombinációjával léphet be a rendszerbe.
+
+A belépési folyamat során a rendszer ellenőrzi a megadott adatokat, és ha azok helyesek, a felhasználó számára megnyílik portál főmenüje.
 - Ebben a menüben a felhasználó több lehetőség közül választhat:
    - láthatja a mások által megosztott híreket
    - hírt tölthet fel az oldalra, amennyiben elegendő social credittel rendelkezik
 
-A portál a felhasználóknak egyszerű kezelést és megfelelő biztonságot nyújt ellenőrzött és szabályozott információkkal. A híreket közzétenni csak megbízható fiókoknak lehet, amelyet egy social credit pontszám határoz meg. A nem bízható (vagyis kevés pontszámmal rendlekező) fiókokat először elzárjuk a további hírek közzétételétől, majd töröljük.
+A portál a felhasználóknak egyszerű kezelést és megfelelő biztonságot nyújt ellenőrzött és szabályozott információkkal.
+
+A híreket közzétenni csak megbízható fiókoknak lehet, amelyet egy social credit pontszám határoz meg. A nem bízható (vagyis kevés pontszámmal rendlekező) fiókokat először elzárjuk a további hírek közzétételétől, majd töröljük.
    
 
 
@@ -75,11 +81,15 @@ A portál a felhasználóknak egyszerű kezelést és megfelelő biztonságot ny
 # 8. Képernyőtervek
 
 # 9. Forgatókönyv
-A felhasználó regisztálhat a hírportálra, amelyet követően a helyesen megadott felhasználónév és jelszó kombinációjával az oldal belépést biztosít a felületre. A regisztrációt követően a felhasználó automatikusan kap egy adott számú social credit pontszámot amely a fiók hitelességét jelzi.
+A felhasználó regisztálhat a hírportálra, amelyet követően a helyesen megadott felhasználónév és jelszó kombinációjával az oldal belépést biztosít a felületre.
+
+A regisztrációt követően a felhasználó automatikusan kap egy adott számú social credit pontszámot amely a fiók hitelességét jelzi.
 
 A felhasználói felület úgy lett kialakítva, hogy könnyedén átlátható és kezelhető legyen, még azok számára is, akik nem rendelkeznek magas szintű technikai tudással. A hírek megjelennek a főoldalon, ahol könnyedén lehet új hírt hozzáadni.
 
-A híreket az alkalmazás automatikusan ellenőrzi és a nem elfogadható hírek esetén attól a felhasználótól, aki a hírt közzétette adott számú social credit pontszámot vesz el. A nem elegendő social creditel rendelkező fiókok nem tehetnek közzé híreket, majd fiókjuk törlésre is kerülhet.
+A híreket az alkalmazás automatikusan ellenőrzi és a nem elfogadható hírek esetén attól a felhasználótól, aki a hírt közzétette adott számú social credit pontszámot vesz el.
+
+A nem elegendő social creditel rendelkező fiókok nem tehetnek közzé híreket, majd fiókjuk törlésre is kerülhet.
 
 A hírportál lehetővé teszi a felhasználók számára a könnyű tájékozódást, egyszerű felhasználói felületet és hatékony hírfeltöltést biztosít.A közzétett hírek azonnal láthatóvá válnak a felületen.
 
@@ -88,9 +98,9 @@ A hírportál lehetővé teszi a felhasználók számára a könnyű tájékozó
 # 10. Funkció
 
 Az alábbi funkciók kerülnek megvalósításra a hírportálon, amelyek biztonságosabbá, gyorsabbá és effektívebbé teszik a hírek böngészését felhasználóink számára:
-- **Új fiók létrehozása -> social kredit hozzáadása a fiókhoz: Új fiók létrehozáa esetén, a felhasználó egy adott összegű spcial creditet kap. Ez mutatja hogy a felhasználó megbízható forrás, ezért posztolhat a portálra.**
-- **Automatikus bejelentkezés: A fiók sikeres létrehozása után az applikáció automatikusan bejelentkezteti a felhasználót, majd megjeleníti a főmenüt, ahonnan további funkciókat érhet el.**
-- **Credit kezelése: Ha a rendszer a felhasználó híreit hamisnak ítéli, a fiókjától social kredit pontokat vesz el, ezzel figyelmezteti/csökkenti a jogusultságait a felhasználónak.**
-- **Fiók korlátozása: Ha a creditszám elég alacsony a rendszer automatikusan megszünteti a felhasználó posztolási lehetőségét.**
-- **Fiók törlése: Ha a social credit elég alacsony, a fiók automatikusan törlődni fog a portálról.**
-- **Kijelentkezés: A felhasználónak lehetősége van kijelentkezni a rendszerből, amely visszaviszi őt a kezdőmenübe. Innen új fiókot hozhat létre, vagy bejelentkezhet egy másik fiókba. A kijelentkezési funkció biztosítja, hogy a felhasználói adatok védelme érdekében a munkamenet biztonságosan lezáruljon.**
+- **Új fiók létrehozása -> social kredit hozzáadása a fiókhoz**: Új fiók létrehozáa esetén, a felhasználó egy adott összegű spcial creditet kap. Ez mutatja hogy a felhasználó megbízható forrás, ezért posztolhat a portálra.**
+- **Automatikus bejelentkezés**: A fiók sikeres létrehozása után az applikáció automatikusan bejelentkezteti a felhasználót, majd megjeleníti a főmenüt, ahonnan további funkciókat érhet el.**
+- **Credit kezelése**: Ha a rendszer a felhasználó híreit hamisnak ítéli, a fiókjától social kredit pontokat vesz el, ezzel figyelmezteti/csökkenti a jogusultságait a felhasználónak.**
+- **Fiók korlátozása**: Ha a creditszám elég alacsony a rendszer automatikusan megszünteti a felhasználó posztolási lehetőségét.**
+- **Fiók törlése**: Ha a social credit elég alacsony, a fiók automatikusan törlődni fog a portálról.**
+- **Kijelentkezés**: A felhasználónak lehetősége van kijelentkezni a rendszerből, amely visszaviszi őt a kezdőmenübe. Innen új fiókot hozhat létre, vagy bejelentkezhet egy másik fiókba. A kijelentkezési funkció biztosítja, hogy a felhasználói adatok védelme érdekében a munkamenet biztonságosan lezáruljon.**
