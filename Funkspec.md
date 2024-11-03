@@ -98,9 +98,12 @@ A hírportál lehetővé teszi a felhasználók számára a könnyű tájékozó
 # 10. Funkció
 
 Az alábbi funkciók kerülnek megvalósításra a hírportálon, amelyek biztonságosabbá, gyorsabbá és effektívebbé teszik a hírek böngészését felhasználóink számára:
-- **Új fiók létrehozása -> social kredit hozzáadása a fiókhoz**: Új fiók létrehozáa esetén, a felhasználó egy adott összegű spcial creditet kap. Ez mutatja hogy a felhasználó megbízható forrás, ezért posztolhat a portálra.**
-- **Automatikus bejelentkezés**: A fiók sikeres létrehozása után az applikáció automatikusan bejelentkezteti a felhasználót, majd megjeleníti a főmenüt, ahonnan további funkciókat érhet el.**
-- **Credit kezelése**: Ha a rendszer a felhasználó híreit hamisnak ítéli, a fiókjától social kredit pontokat vesz el, ezzel figyelmezteti/csökkenti a jogusultságait a felhasználónak.**
-- **Fiók korlátozása**: Ha a creditszám elég alacsony a rendszer automatikusan megszünteti a felhasználó posztolási lehetőségét.**
-- **Fiók törlése**: Ha a social credit elég alacsony, a fiók automatikusan törlődni fog a portálról.**
-- **Kijelentkezés**: A felhasználónak lehetősége van kijelentkezni a rendszerből, amely visszaviszi őt a kezdőmenübe. Innen új fiókot hozhat létre, vagy bejelentkezhet egy másik fiókba. A kijelentkezési funkció biztosítja, hogy a felhasználói adatok védelme érdekében a munkamenet biztonságosan lezáruljon.**
+
+- **Új fiók létrehozása**: Új fiókot hozhat létre a felhasználó, annak érdekében hogy saját ízléséhez megfelelő hírt ajánljon neki az oldal. Ezen felül hírt írni csak a regisztrált fiókkal rendelkező felhasználók tudnak.
+- **social kredit hozzárendelése a fiókhoz**:Új fiók létrehozása esetén, a felhasználó egy adott összegű social creditet kap. Ez mutatja hogy a felhasználó megbízható forrás, ezért posztolhat a portálra.
+- **Automatikus bejelentkezés**: A fiók sikeres létrehozása után az applikáció automatikusan bejelentkezteti a felhasználót, majd megjeleníti a főmenüt, ahonnan további funkciókat érhet el. Kijelentkezés esetén pedig felhasználónév és jelszó párossal visszaléphet a fiókjába.
+- **Credit kezelése**: Ha a rendszer a felhasználó híreit hamisnak ítéli, a fiókjától social kredit pontokat vesz el, ezzel figyelmezteti/csökkenti a jogusultságait a felhasználónak.
+- **Fiók korlátozása**: Ha a creditszám elég alacsony a rendszer automatikusan megszünteti a felhasználó posztolási lehetőségét.
+- **Fiók törlése**: Ha a social credit elég alacsony, a fiók automatikusan törlődni fog a portálról.
+- **Kijelentkezés**: A felhasználónak lehetősége van kijelentkezni a rendszerből, amely visszaviszi őt a kezdőmenübe. Innen új fiókot hozhat létre, vagy bejelentkezhet egy másik fiókba. A kijelentkezési funkció biztosítja, hogy a felhasználói adatok védelme érdekében a munkamenet biztonságosan lezáruljon.
+- **Elfelejtett jelszó**: Elfejeltett jelszó esetén a felhasználó által megadott email fiókjára küldünk egy kódot (amennyiben ezzel az email címmel létezik regisztrált fiók), aminek beírása után a felhasználó megváltoztathatja jelszavát. Az új jelszava nem lehet az előző 3 alkalommal használt jelszó.
