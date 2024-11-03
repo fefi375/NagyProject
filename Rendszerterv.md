@@ -14,7 +14,9 @@
 
 # 1. Rendszer célja
 
-A hírportál célja egy olyan platform létrehozása, ahol a felhasználók regisztrálhatnak, bejelentkezhetnek, híreket írhatnak, és ezzel social credit rendszert használhatnak. A rendszer célja a minőségi tartalom előmozdítása és a felhasználói közösség felelősségteljes viselkedésének ösztönzése.
+A hírportál célja egy olyan platform létrehozása, ahol a felhasználók regisztrálhatnak, bejelentkezhetnek, híreket írhatnak, és ezzel social credit rendszert használhatnak.
+
+A rendszer célja a minőségi tartalom előmozdítása és a felhasználói közösség felelősségteljes viselkedésének ösztönzése.
 
 # 2. Projektterv
 
@@ -76,32 +78,38 @@ A hírportál célja egy olyan platform létrehozása, ahol a felhasználók reg
 
 A rendszer futtatásához szükséges fizikai környezet az alábbiakat foglalja magában:
 
-- **Szerverek**: A hírportál számára dedikált szerverek, amelyek képesek a felhasználói adatok és a hírek tárolására, valamint a rendszer folyamatos működésének biztosítására.
-- **Hálózati infrastruktúra**: Stabil internetkapcsolat, amely lehetővé teszi a felhasználók számára a hírportál elérését.
-- **Biztonsági rendszerek**: Tűzfalak és egyéb biztonsági megoldások, amelyek védik a rendszert a külső támadásoktól.
+1. **Szerverek**:
+    - A hírportál számára dedikált szerverek, amelyek képesek a felhasználói adatok és a hírek tárolására, valamint a rendszer folyamatos működésének biztosítására.
+2. **Hálózati infrastruktúra**:
+    - Stabil internetkapcsolat, amely lehetővé teszi a felhasználók számára a hírportál elérését.
+3. **Biztonsági rendszerek**:
+    - Tűzfalak és egyéb biztonsági megoldások, amelyek védik a rendszert a külső támadásoktól.
 
 # 7. Architekturális terv
 
 A hírportál architektúrája a következő elemekből áll:
 
-Frontend: A felhasználói felület, amely HTML, CSS és JavaScript technológiák használatával készült, lehetővé téve a felhasználók számára a hírek olvasását, írását és a fiókjuk kezelését.
-Backend: Az adatkezelés és logika végrehajtásáért felelős réteg, amely programozási nyelvek (Python) és keretrendszerek (pl. Django) segítségével van megvalósítva.
-Adatbázis: Relációs adatbázis (SQLite) a felhasználói adatok és hírek tárolására, amely a backenddel kommunikál a szükséges információk lekérdezésére és módosítására.
+1. **Frontend**:
+    - A felhasználói felület, amely HTML, CSS és JavaScript technológiák használatával készült, lehetővé téve a felhasználók számára a hírek olvasását, írását és a fiókjuk kezelését.
+2. **Backend**:
+    - Az adatkezelés és logika végrehajtásáért felelős réteg, amely programozási nyelvek (Python) és keretrendszerek (pl. Django) segítségével van megvalósítva.
+3. **Adatbázis**:
+    - Relációs adatbázis (SQLite) a felhasználói adatok és hírek tárolására, amely a backenddel kommunikál a szükséges információk lekérdezésére és módosítására.
 
 # 8. Adatbázis terv
 
 - **8.1 Adatbázis táblák**
 1. **users tábla**
-    - **id**: Egyedi azonosító, amely automatikusan növekszik (INTEGER PRIMARY KEY AUTOINCREMENT).
-    - **username**: A felhasználónevet tároló mező, amely nem lehet üres (TEXT NOT NULL).
-    - **password**: A jelszót tároló mező, amely nem lehet üres (TEXT NOT NULL).
-    - **credit**: A felhasználó egyenlegét tároló mező, alapértelmezett értéke 500 (REAL DEFAULT 500).
+    - **id**: Egyedi azonosító, amely automatikusan növekszik.
+    - **username**: A felhasználónevet tároló mező, amely nem lehet üres.
+    - **password**: A jelszót tároló mező, amely nem lehet üres.
+    - **credit**: A felhasználó egyenlegét tároló mező, alapértelmezett értéke 500.
 
 2. **articles tábla**
-    - **id**: Egyedi azonosító, amely automatikusan növekszik (INTEGER PRIMARY KEY AUTOINCREMENT).
-    - **title**: A cikk címe, amely nem lehet üres (TEXT NOT NULL).
-    - **content**: A cikk tartalma, amely nem lehet üres (TEXT NOT NULL).
-    - **author_id**: Az író azonosítója, amely egy külső kulcs a users táblából (INTEGER, FOREIGN KEY REFERENCES users(id)).
+    - **id**: Egyedi azonosító, amely automatikusan növekszik.
+    - **title**: A cikk címe, amely nem lehet üres.
+    - **content**: A cikk tartalma, amely nem lehet üres.
+    - **author_id**: Az író azonosítója, amely egy külső kulcs a users táblából.
 
 - **8.2 Adatbázis ábra**
 
@@ -127,9 +135,9 @@ Adatbázis: Relációs adatbázis (SQLite) a felhasználói adatok és hírek t�
     - Adatbázis implementálása a felhasználói adatok tárolására
     - GUI fejlesztése.
 2. **Funkcionális fejlesztés**:
-    - Az hírek közzétételének, social credit manipulálásának, nem megbízható források letiltásának implementálása.<br>
+    - Az hírek közzétételének, social credit manipulálásának, nem megbízható források letiltásának implementálása.
 4. **Tesztelés**:
-    - Minden funkció tesztelése különböző felhasználói forgatókönyvekkel.<br>
+    - Minden funkció tesztelése különböző felhasználói forgatókönyvekkel.
 5. **Finomítás**:
     - Az esetleges hibák javítása és az alkalmazás teljesítményének optimalizálása.
     - A fejlesztés során folyamatosan figyelemmel kísérjük a kód minőségét és a legjobb gyakorlatokat alkalmazzuk, hogy a karbantartás és a további fejlesztések a jövőben zökkenőmentesen valósuljanak meg, végig törekedünk a tiszta kódra.
@@ -140,33 +148,48 @@ Adatbázis: Relációs adatbázis (SQLite) a felhasználói adatok és hírek t�
 
 A tesztelési folyamat az alábbi lépéseket tartalmazza:
 
-- **Funkcionális tesztelés**: Minden funkció tesztelése a specifikációknak megfelelően, beleértve a regisztrációt, bejelentkezést, hírírást és social credit rendszer működését.
-- **Teljesítménytesztelés**: A rendszer terhelés alatti viselkedésének ellenőrzése, hogy biztosítsa a gyors válaszidőt és a stabil működést.
-- **Biztonsági tesztelés**: A rendszer sebezhetőségeinek feltérképezése és a potenciális támadási felületek azonosítása.
-- **Felhasználói tesztelés**: A végfelhasználók bevonásával végzett tesztelés, hogy értékeljék a felhasználói élményt és az interfész használhatóságát.
+1. **Funkcionális tesztelés**:
+    - Minden funkció tesztelése a specifikációknak megfelelően, beleértve a regisztrációt, bejelentkezést, hírírást és social credit rendszer működését.
+2. **Teljesítménytesztelés**:
+    - A rendszer terhelés alatti viselkedésének ellenőrzése, hogy biztosítsa a gyors válaszidőt és a stabil működést.
+3. **Biztonsági tesztelés**:
+    - A rendszer sebezhetőségeinek feltérképezése és a potenciális támadási felületek azonosítása.
+4. **Felhasználói tesztelés**:
+    - A végfelhasználók bevonásával végzett tesztelés, hogy értékeljék a felhasználói élményt és az interfész használhatóságát.
 
 
 # 11. Telepítési terv
 A telepítési terv az alábbi lépéseket tartalmazza:
 
-- **Előkészítés**: A rendszer és az összes szükséges komponens (szerverek, adatbázis, stb.) előkészítése.
-- **Telepítés**: A rendszer telepítése a kiválasztott szerverekre és az adatbázis beállítása.
-- **Következő lépések**: A rendszer működésének ellenőrzése, a felhasználói fiókok létrehozása és a rendszer használatának megkezdése.
+1. **Előkészítés**:
+    - A rendszer és az összes szükséges komponens (szerverek, adatbázis, stb.) előkészítése.
+2. **Telepítés**:
+    - A rendszer telepítése a kiválasztott szerverekre és az adatbázis beállítása.
+3. **Következő lépések**:
+    - A rendszer működésének ellenőrzése, a felhasználói fiókok létrehozása és a rendszer használatának megkezdése.
 
 # 12. Karbantartási terv
 
 A karbantartási terv a következőket foglalja magában:
 
-- **Rendszeres frissítések**: A szoftverfrissítések és biztonsági javítások rendszeres végrehajtása.
-- **Hibajavítás**: A felhasználók által bejelentett hibák gyors kezelése és javítása.
-- **Teljesítményfigyelés**: A rendszer teljesítményének folyamatos figyelemmel kísérése és optimalizálása.
-- **Felhasználói támogatás**: A felhasználók számára segítségnyújtás a rendszer használatával kapcsolatos kérdésekben.
+1. **Rendszeres frissítések**:
+    - A szoftverfrissítések és biztonsági javítások rendszeres végrehajtása.
+2. **Hibajavítás**:
+    - A felhasználók által bejelentett hibák gyors kezelése és javítása.
+    - Egyéb észrevett hibák javítása.
+3. **Teljesítményfigyelés**:
+    - A rendszer teljesítményének folyamatos figyelemmel kísérése és optimalizálása.
+4. **Felhasználói támogatás**:
+    - A felhasználók számára segítségnyújtás a rendszer használatával kapcsolatos kérdésekben.
 
 
 # 13. Képernyő terv
 
 # 14. Fogalomtár
 
+- **Frontend**: A frontend a szoftverfejlesztés azon része, amely a felhasználók számára látható és interaktív elemeket tartalmaz, mint például a weboldalak dizájnja, a gombok, űrlapok és menük.
+- **Backend**: A backend a szoftverfejlesztés azon része, amely a felhasználói felület mögött működik, és felelős az adatok feldolgozásáért, tárolásáért és logikájáért.
+- **GUI**: A GUI (Graphical User Interface) egy vizuális felhasználói interfész, amely lehetővé teszi a felhasználók számára, hogy grafikus elemek, például ikonok, gombok és ablakok segítségével interakcióba lépjenek a számítógépes programokkal.
 - **Adatbázis**: Az adatbázis egy strukturált adattároló, amely lehetővé teszi adatok rendszerezett, biztonságos és hatékony tárolását, lekérdezését és kezelését (Név, jelszó).
 - **Social credit**: A social credit egy olyan rendszer, amely a polgárok viselkedését és tevékenységeit értékeli, gyakran pontozás vagy rangsorolás alapján. Ezt a rendszert legjobban Kínában ismerik, ahol a kormány különböző adatokat gyűjt a polgárokról, például a pénzügyi viselkedésükről, a közlekedési szabálysértéseikről, és a közösségi médiában való aktivitásukról. A célja, hogy ösztönözze a "jó" viselkedést és csökkentse a "rossz" viselkedést, például a törvényszegéseket.
 - **Anonymous user**: Azok a felhasználók, akik rátekintenek az oldalra, de nem jelentkeznek be. Limitált jogokkal rendelkeznek (pl.: hírolvasás). 
