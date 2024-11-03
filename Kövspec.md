@@ -47,12 +47,18 @@ Megakadályozza hogy a kevés social credittel rendelkezők álhíreket terjessz
       - 4.1.2.4. Fiók törlése nagyon alacsony social credit szintnél
 
 # 5. Rendszerre vonatkozó szabályok
-- Hírek Moderálása: Minden közzétett hírnek át kell esnie automatikus és manuális ellenőrzésen.
-- Fiókhoz Rendelt Social Credit: Minden felhasználónak rendelkeznie kell egy social credit pontszámmal, amely a tevékenységeik alapján változik.
-- Alacsony Social Credit Szint: Az alacsony social credit szinttel rendelkező felhasználók hírírási jogát meg kell vonni.
-- Fiók Törlése: Azok a fiókok, akiknek a social credit szintje rendkívül alacsony, automatikusan törlésre kerülnek.
-- Álhírek észlelése: Az automatikus rendszernek képesnek kell lennie az álhírek azonosítására.
-- Fiók Használati Szabályok: A felhasználók kötelesek betartani a közösségi irányelveket, különben fiókjuk felfüggesztésre kerülhet.
+1. **Hírek Moderálása**:
+   - Minden közzétett hírnek át kell esnie automatikus és manuális ellenőrzésen.
+2. **Fiókhoz Rendelt Social Credit**:
+   - Minden felhasználónak rendelkeznie kell egy social credit pontszámmal, amely a tevékenységeik alapján változik.
+3. **Alacsony Social Credit Szint**:
+   - Az alacsony social credit szinttel rendelkező felhasználók hírírási jogát meg kell vonni.
+4. **Fiók Törlése**:
+   - Azok a fiókok, akiknek a social credit szintje rendkívül alacsony, automatikusan törlésre kerülnek.
+5. **Álhírek észlelése**:
+   - Az automatikus rendszernek képesnek kell lennie az álhírek azonosítására.
+6. **Fiók Használati Szabályok**:
+   - A felhasználók kötelesek betartani a közösségi irányelveket, különben fiókjuk felfüggesztésre kerülhet.
 
 # 6. Követelménylista
    |   Modul   |   ID  |   Név |   version |   Kifejtés    |
@@ -67,5 +73,6 @@ Megakadályozza hogy a kevés social credittel rendelkezők álhíreket terjessz
 
 # 7. Fogalomtár
 
+- **GUI**: A GUI (Graphical User Interface) egy vizuális felhasználói interfész, amely lehetővé teszi a felhasználók számára, hogy grafikus elemek, például ikonok, gombok és ablakok segítségével interakcióba lépjenek a számítógépes programokkal.
 - **Adatbázis**: Az adatbázis egy strukturált adattároló, amely lehetővé teszi adatok rendszerezett, biztonságos és hatékony tárolását, lekérdezését és kezelését (Név, jelszó).
 - **Social credit**: A social credit egy olyan rendszer, amely a polgárok viselkedését és tevékenységeit értékeli, gyakran pontozás vagy rangsorolás alapján. Ezt a rendszert legjobban Kínában ismerik, ahol a kormány különböző adatokat gyűjt a polgárokról, például a pénzügyi viselkedésükről, a közlekedési szabálysértéseikről, és a közösségi médiában való aktivitásukról. A célja, hogy ösztönözze a "jó" viselkedést és csökkentse a "rossz" viselkedést, például a törvényszegéseket.
