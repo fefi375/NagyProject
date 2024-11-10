@@ -1,17 +1,17 @@
-#container {
-    border: 0.5px solid black;
-    text-align: center;
-}
 h1,h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 a {
     border: none;
     font-size: 1.5em;
-    color: lightblue;
+    color: lightcoral;
+    transition: transform 0.2s ease, font-size 0.2s ease;
 }
+
 a:hover {
     font-size: 2em;
+    transform: scale(1.5);
 }
 
 ul, li {
