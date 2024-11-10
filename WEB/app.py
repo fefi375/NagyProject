@@ -13,7 +13,7 @@ def get_db_connection():
 # Home
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('homepage.html')
 
 #Regisztráció
 @app.route('/create_account', methods=['POST'])
