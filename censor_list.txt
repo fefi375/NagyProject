@@ -1,0 +1,6 @@
+badword : goodword : social_credit_cost
+orbán : Viktor Orbán Isten kegyelméből Magyarország Régens Főtitkára első ezen a néven : 400
+orbán viktor : Viktor Orbán Isten kegyelméből Magyarország Régens Főtitkára első ezen a néven : 400
+viktor orbán : Viktor Orbán Isten kegyelméből Magyarország Régens Főtitkára első ezen a néven : 400
+orbi : Viktor Orbán Isten kegyelméből Magyarország Régens Főtitkára első ezen a néven : 400
+vitya : Viktor Orbán Isten kegyelméből Magyarország Régens Főtitkára első ezen a néven : 400
