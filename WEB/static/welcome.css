@@ -1,0 +1,19 @@
+#container {
+    border: 0.5px solid black;
+    text-align: center;
+}
+h1,h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+    border: none;
+    font-size: 1.5em;
+    color: lightblue;
+}
+a:hover {
+    font-size: 2em;
+}
+
+ul, li {
+    list-style-type: none;
+}

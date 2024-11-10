@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>News Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='welcome.css') }}">
 </head>
 <body>
+    <div id="container">
     <h1>Welcome to the News Portal, {{ session['username'] }}!</h1>
 
     <p><a href="{{ url_for('upload_article') }}">Upload a new article</a></p>
@@ -17,5 +20,6 @@
             <li><a href="{{ url_for('article', article_id=article['id']) }}">{{ article['title'] }}</a></li>
         {% endfor %}
     </ul>
+    </div>
 </body>
 </html>
