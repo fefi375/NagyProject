@@ -61,6 +61,12 @@ def login():
         flash("Invalid username or password. Please try again.")
         return redirect(url_for('home'))
 
+# fiók létrehozása
+@app.route('/account_create', methods=['GET'])
+def create_account_page():
+    return render_template('account_create.html')
+
+
 # kijelentkezés
 @app.route('/logout')
 def logout():
