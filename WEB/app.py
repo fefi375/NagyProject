@@ -139,23 +139,30 @@ def upload_article():
         content = request.form['content']
         author_id = session['user_id']
 
-        # Load censor list and process content
+        # Load censor data
         censor_data = load_censor_list()
-        censored_content, social_credit_adjustment = censor_content(content, censor_data)
+
+        # Censor title and content
+        censored_title, title_credit_adjustment = censor_content(title, censor_data)
+        censored_content, content_credit_adjustment = censor_content(content, censor_data)
+
+        # Calculate total credit adjustment
+        total_credit_adjustment = title_credit_adjustment + content_credit_adjustment
 
         # Connect to the database and save the article
         conn = get_db_connection()
         cursor = conn.cursor()
-        cursor.execute('INSERT INTO articles (title, content, author_id) VALUES (?, ?, ?)', (title, censored_content, author_id))
+        cursor.execute('INSERT INTO articles (title, content, author_id) VALUES (?, ?, ?)', (censored_title, censored_content, author_id))
 
-        # Update user's social credit score
-        cursor.execute('UPDATE users SET credit = credit + ? WHERE id = ?', (social_credit_adjustment, author_id))
+        # Update user's credit score
+        cursor.execute('UPDATE users SET credit = credit + ? WHERE id = ?', (total_credit_adjustment, author_id))
         conn.commit()
         conn.close()
 
-        flash("Article uploaded successfully!")
+        flash("Article uploaded successfully with censorship applied!")
         return redirect(url_for('news_portal'))
 
     return render_template('upload_article.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
