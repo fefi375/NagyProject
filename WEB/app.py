@@ -110,7 +110,22 @@ def load_censor_list(filename='censor_list.txt'):
             censor_data[bad_word] = (good_word, int(credit_cost))
     return censor_data
 
+# Cenzúraázó funkció
+def censor_content(content, censor_data):
+    adjusted_content = content
+    total_social_credit_adjustment = 0
 
+    for bad_word, (good_word, credit_cost) in censor_data.items():
+        # Count occurrences of the bad word
+        occurrences = len(re.findall(r'\b' + re.escape(bad_word) + r'\b', adjusted_content))
+        
+        # Replace bad word with good word
+        adjusted_content = re.sub(r'\b' + re.escape(bad_word) + r'\b', good_word, adjusted_content)
+        
+        # Calculate social credit adjustment
+        total_social_credit_adjustment += occurrences * credit_cost
+
+    return adjusted_content, total_social_credit_adjustment
 
 @app.route('/upload_article', methods=['GET', 'POST'])
 def upload_article():
