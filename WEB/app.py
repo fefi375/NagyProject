@@ -149,7 +149,7 @@ def upload_article():
         cursor.execute('INSERT INTO articles (title, content, author_id) VALUES (?, ?, ?)', (title, censored_content, author_id))
 
         # Update user's social credit score
-        cursor.execute('UPDATE users SET social_credit = social_credit + ? WHERE id = ?', (social_credit_adjustment, author_id))
+        cursor.execute('UPDATE users SET credit = credit + ? WHERE id = ?', (social_credit_adjustment, author_id))
         conn.commit()
         conn.close()
 
