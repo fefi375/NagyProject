@@ -1,5 +1,6 @@
 from flask import Flask, request, redirect, render_template, url_for, flash, session
 import sqlite3
+import re
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
@@ -99,6 +100,18 @@ def article(article_id):
         return redirect(url_for('news_portal'))
 
 # új cikk feltöltése
+
+# cenzúra lista betöltése
+def load_censor_list(filename='censor_list.txt'):
+    censor_data = {}
+    with open(filename, 'r') as f:
+        for line in f:
+            bad_word, good_word, credit_cost = line.strip().split(' : ')
+            censor_data[bad_word] = (good_word, int(credit_cost))
+    return censor_data
+
+
+
 @app.route('/upload_article', methods=['GET', 'POST'])
 def upload_article():
     if 'user_id' not in session:
