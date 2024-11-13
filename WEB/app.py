@@ -127,7 +127,6 @@ def censor_content(content, censor_data):
 
     return adjusted_content, total_social_credit_adjustment
 
-@app.route('/upload_article', methods=['GET', 'POST'])
 def upload_article():
     if 'user_id' not in session:
         flash("Please log in to upload an article.")
@@ -138,9 +137,17 @@ def upload_article():
         content = request.form['content']
         author_id = session['user_id']
 
+        # Load censor list and process content
+        censor_data = load_censor_list()
+        censored_content, social_credit_adjustment = censor_content(content, censor_data)
+
+        # Connect to the database and save the article
         conn = get_db_connection()
         cursor = conn.cursor()
-        cursor.execute('INSERT INTO articles (title, content, author_id) VALUES (?, ?, ?)', (title, content, author_id))
+        cursor.execute('INSERT INTO articles (title, content, author_id) VALUES (?, ?, ?)', (title, censored_content, author_id))
+
+        # Update user's social credit score
+        cursor.execute('UPDATE users SET social_credit = social_credit + ? WHERE id = ?', (social_credit_adjustment, author_id))
         conn.commit()
         conn.close()
 
