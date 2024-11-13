@@ -127,6 +127,8 @@ def censor_content(content, censor_data):
 
     return adjusted_content, total_social_credit_adjustment
 
+# Define the route with a unique endpoint 'upload_article'
+@app.route('/upload_article', methods=['GET', 'POST'])
 def upload_article():
     if 'user_id' not in session:
         flash("Please log in to upload an article.")
@@ -155,6 +157,5 @@ def upload_article():
         return redirect(url_for('news_portal'))
 
     return render_template('upload_article.html')
-
 if __name__ == '__main__':
     app.run(debug=True)
