@@ -160,9 +160,10 @@ def upload_article():
         conn.commit()
         conn.close()
 
+        
         flash("Article uploaded successfully with censorship applied!")
         return redirect(url_for('news_portal'))
-
+        
     return render_template('upload_article.html')
 
 
