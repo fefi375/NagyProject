@@ -4,3 +4,52 @@ orbán viktor : Viktor Orbán Isten kegyelméből Magyarország Régens Főtitk�
 viktor orbán : Viktor Orbán Isten kegyelméből Magyarország Régens Főtitkára első ezen a néven : 400
 orbi : Viktor Orbán Isten kegyelméből Magyarország Régens Főtitkára első ezen a néven : 400
 vitya : Viktor Orbán Isten kegyelméből Magyarország Régens Főtitkára első ezen a néven : 400
+baloldali : kommunista : 200
+dk : guruló dollár baloldal : 200
+mszp : guruló dollár baloldal : 200
+lmp : guruló dollár baloldal : 200
+párbeszéd : guruló dollár baloldal : 200
+fájdalom : trianon : 20
+kín : trianon : 20
+szenvedés : trianon : 20
+gyurcsány : bezzeg a gyurcsány jobb volt? : 50
+náci : Mérsékelten közép jobboladali Nemzetiszocialista Munkáspárti : 10
+nazi : Mérsékelten közép jobboladali Nemzetiszocialista Munkáspárti : 10
+propaganda: PR : 30
+citrom : magyar narancs : 30
+ketchup : puszta szósz : 10
+hitler : senior hilter : 10
+stalin : második főtitkár úr : 10
+sztálin : második főtitkár úr : 10
+lenin : első főtitkár úr : 10
+kína : nyugat taiwan : 50
+taiwan : kínai Tajpej
+tienanmen tér : semmi nem történt tienanmen téren : 200
+xi jinping : micimackó : 100
+fidesz propaganda : soros terv része : 300
+gyűlölet beszéd : beszéd amit nem szeretek : 50
+rasszista : meritokracista : 30
+LMBTQ : az abc-emberek: 40
+fasiszta : mérsékelten közép jobboldali : 50
+msnpbc : main stream propaganda : 50
+cnn : main stream propaganda : 50
+fox news: irányított ellenzék: 30
+nő : férfi : 60
+férfi : nő : 70
+cis : normális : 60
+furry : nem normális : 60
+BLM : tüzes de többnyire békés tüntetés : 60
+demens : erős és egészséges: 80
+demencia : erő és egészség : 80
+puerto rico : szemét sziget : 50
+infláció : bidenomics in work : 60
+kék : piros : 20 
+zöld : lila : 20
+fekete : fehér : 40
+fehér : fekete : 20
+régen : RONÁLD RÉGEN : 60
+
+
+
+
+
