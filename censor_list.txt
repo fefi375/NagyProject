@@ -42,12 +42,13 @@ BLM : tüzes de többnyire békés tüntetés : 60
 demens : erős és egészséges: 80
 demencia : erő és egészség : 80
 puerto rico : szemét sziget : 50
-infláció : bidenomics in work : 60
+infláció : bidenomics : 60
 kék : piros : 20 
 zöld : lila : 20
 fekete : fehér : 40
 fehér : fekete : 20
 régen : RONÁLD RÉGEN : 60
+
 
 
 

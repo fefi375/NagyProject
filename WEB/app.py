@@ -123,7 +123,7 @@ def censor_content(content, censor_data):
         adjusted_content = re.sub(r'\b' + re.escape(bad_word) + r'\b', good_word, adjusted_content, flags=re.IGNORECASE)
         
         # Calculate social credit adjustment
-        total_social_credit_adjustment += occurrences * credit_cost
+        total_social_credit_adjustment -= occurrences * credit_cost
 
     return adjusted_content, total_social_credit_adjustment
 
