@@ -103,8 +103,9 @@ def article(article_id):
 
 # cenzúra lista betöltése
 def load_censor_list(filename='censor_list.txt'):
+    import codecs  # UTF-8 kezeléshez biztosíték
     censor_data = {}
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:  # UTF-8 kódolás beállítása
         for line in f:
             bad_word, good_word, credit_cost = line.strip().split(' : ')
             censor_data[bad_word] = (good_word, int(credit_cost))
