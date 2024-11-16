@@ -15,7 +15,7 @@ szenvedés : trianon : 20
 gyurcsány : bezzeg a gyurcsány jobb volt? : 50
 náci : Mérsékelten közép jobboladali Nemzetiszocialista Munkáspárti : 10
 nazi : Mérsékelten közép jobboladali Nemzetiszocialista Munkáspárti : 10
-propaganda: PR : 30
+propaganda : PR : 30
 citrom : magyar narancs : 30
 ketchup : puszta szósz : 10
 hitler : senior hilter : 10
@@ -23,23 +23,15 @@ stalin : második főtitkár úr : 10
 sztálin : második főtitkár úr : 10
 lenin : első főtitkár úr : 10
 kína : nyugat taiwan : 50
-taiwan : kínai Tajpej
+taiwan : kínai Tajpej : 60
 tienanmen tér : semmi nem történt tienanmen téren : 200
 xi jinping : micimackó : 100
 fidesz propaganda : soros terv része : 300
 gyűlölet beszéd : beszéd amit nem szeretek : 50
 rasszista : meritokracista : 30
-LMBTQ : az abc-emberek: 40
+LMBTQ : az abc-emberek : 40
 fasiszta : mérsékelten közép jobboldali : 50
 msnpbc : main stream propaganda : 50
-cnn : main stream propaganda : 50
-fox news: irányított ellenzék: 30
-nő : férfi : 60
-férfi : nő : 70
-cis : normális : 60
-furry : nem normális : 60
-BLM : tüzes de többnyire békés tüntetés : 60
-demens : erős és egészséges: 80
 demencia : erő és egészség : 80
 puerto rico : szemét sziget : 50
 infláció : bidenomics : 60
@@ -48,9 +40,12 @@ zöld : lila : 20
 fekete : fehér : 40
 fehér : fekete : 20
 régen : RONÁLD RÉGEN : 60
-
-
-
-
-
-
+cis : normális : 60
+furry : nem normális : 60
+BLM : tüzes de többnyire békés tüntetés : 60
+demens : erős és egészséges : 80
+feminista : misszandrista : 50
+cnn : main stream propaganda : 50
+fox news : irányított ellenzék : 30
+nő : férfi : 60
+férfi : nő : 70

@@ -103,6 +103,7 @@ def article(article_id):
 
 # Cenzúra lista betöltése
 def load_censor_list(filename='censor_list.txt'):
+
     censor_data = {}
     with open(filename, 'r', encoding='utf-8') as f:  # UTF-8 kódolás beállítása
         for line in f:
