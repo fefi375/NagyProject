@@ -99,36 +99,35 @@ def article(article_id):
         flash("Article not found.")
         return redirect(url_for('news_portal'))
 
-# új cikk feltöltése
 
-# cenzúra lista betöltése
+
+# Cenzúra lista betöltése
 def load_censor_list(filename='censor_list.txt'):
-    import codecs  # UTF-8 kezeléshez biztosíték
     censor_data = {}
     with open(filename, 'r', encoding='utf-8') as f:  # UTF-8 kódolás beállítása
         for line in f:
             bad_word, good_word, credit_cost = line.strip().split(' : ')
-            censor_data[bad_word] = (good_word, int(credit_cost))
+            censor_data[bad_word.lower()] = (good_word, int(credit_cost))  # Convert bad_word to lowercase for consistency
     return censor_data
 
-# Cenzúraázó funkció
+# Cenzúrázó funkció
 def censor_content(content, censor_data):
     adjusted_content = content
     total_social_credit_adjustment = 0
 
     for bad_word, (good_word, credit_cost) in censor_data.items():
-        # Count occurrences of the bad word
-        occurrences = len(re.findall(r'\b' + re.escape(bad_word) + r'\b', adjusted_content))
+        # Count occurrences of the bad word (case insensitive)
+        occurrences = len(re.findall(r'\b' + re.escape(bad_word) + r'\b', adjusted_content, flags=re.IGNORECASE))
         
-        # Replace bad word with good word
-        adjusted_content = re.sub(r'\b' + re.escape(bad_word) + r'\b', good_word, adjusted_content)
+        # Replace bad word with good word (case insensitive)
+        adjusted_content = re.sub(r'\b' + re.escape(bad_word) + r'\b', good_word, adjusted_content, flags=re.IGNORECASE)
         
         # Calculate social credit adjustment
         total_social_credit_adjustment += occurrences * credit_cost
 
     return adjusted_content, total_social_credit_adjustment
 
-# Define the route with a unique endpoint 'upload_article'
+# Új cikk feltöltése
 @app.route('/upload_article', methods=['GET', 'POST'])
 def upload_article():
     if 'user_id' not in session:
@@ -164,6 +163,7 @@ def upload_article():
         return redirect(url_for('news_portal'))
 
     return render_template('upload_article.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
