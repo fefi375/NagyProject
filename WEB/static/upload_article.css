@@ -19,6 +19,7 @@ h1{
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+    margin-bottom: 10vh;
 }
 
 form {
@@ -32,9 +33,16 @@ label {
     display: flex;
     text-align: center;
     margin-bottom: 5px;
+    font-size: larger;
+    font-weight: bold;
 }
 
 button {
     margin-top: 10px;
     align-self: center;
+    margin-bottom: 20px;
+}
+
+a{
+    
 }
