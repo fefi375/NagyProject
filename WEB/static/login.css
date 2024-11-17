@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+label {
+    display: flex;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+button {
+    margin-top: 10px;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border: 0.2px solid black;
+    border-radius: 5px;
+}
