@@ -53,10 +53,11 @@ button {
     font-size: large;
     border-radius: 5px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 button:hover{
     background-color: antiquewhite;
-    
+    transform: scale(1.1);
 }
 
 

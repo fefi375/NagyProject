@@ -38,11 +38,27 @@ label {
 }
 
 button {
-    margin-top: 10px;
-    align-self: center;
-    margin-bottom: 20px;
+    padding:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 20px;
+}
+button:hover{
+    background-color: antiquewhite;
+    transform: scale(1.1);
 }
 
+textarea{
+    width: 400%;
+    height: 10vh;
+    padding: 20px;
+}
+
+
 a{
-    
+
 }
