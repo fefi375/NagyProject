@@ -45,7 +45,7 @@ button {
     border-radius: 5px;
     font-weight: bold;
     margin: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 button:hover{
     background-color: antiquewhite;
@@ -56,10 +56,14 @@ textarea{
     width: 400%;
     height: 10vh;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 
 a{
     font-size:x-large;
+}
 
+a:hover{
+    transform: scale(1.2);
 }
