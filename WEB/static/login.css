@@ -17,18 +17,18 @@ head{
 }
 
 h1{
+    margin-top: 0;
     text-align: center;
     background-color: #007BFF;
     width: 100%;
-    line-height: 120px;
-    padding-top: 80px;
-    margin-top: 0px;
+    line-height: 90px;
+    padding: 10px;
     border: 0px;
-    align-self:flex-start;
+    
 }
 h2{
     text-align: center;
-    margin-top: 30px;
+    
 }
 
 form {
@@ -69,5 +69,9 @@ a {
     padding: 5px;
     border: 0.2px solid black;
     border-radius: 5px;
+}
+
+a:hover{
+    transform: scale(1.2);
 }
 
