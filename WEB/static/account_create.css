@@ -6,19 +6,26 @@ body {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
+    overflow-x: hidden;
 }
+
 head{
     background-color: #007BFF;
 }
 
-h2{
+h1{
     margin-top: 0;
     text-align: center;
     background-color: #007BFF;
-    padding: 20px;
-    border: 0px;
-    margin-bottom: 80px;
+    color: white;
     width: 100%;
+    line-height: 90px;
+    padding: 10px;
+    border: 0px;
+}
+
+h2{
+    text-align: center;
 }
 
 form {
