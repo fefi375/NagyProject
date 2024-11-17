@@ -6,9 +6,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='article.css') }}">
 </head>
 <body>
-    <h1>{{ article['title'] }}</h1>
-    <p>By: {{ session['username'] }}</p>
-    <p>{{ article['content'] }}</p>
-    <a href="{{ url_for('news_portal') }}">Back to News Portal</a>
+    <div id="container">
+        <div id="felso_sor">
+            <h1>{{ article['title'] }}</h1>
+            <p>By: {{ session['username'] }}</p>
+        </div>
+        <div id="kozepso_content">
+            <p>{{ article['content'] }}</p>
+            <a href="{{ url_for('news_portal') }}">Back to News Portal</a>
+        </div>
+    </div>
 </body>
 </html>
