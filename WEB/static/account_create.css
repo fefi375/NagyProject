@@ -1,27 +1,46 @@
+html{
+    margin:0;
+}
 
 body {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 70vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
 }
+head{
+    background-color: #007BFF;
+}
+
 h2{
-    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 30px;
     text-align: center;
     background-color: #007BFF;
-    width: 100vh;
-    padding-top: 10px;
-
+    width: 100%;
+    line-height: 120px;
+    padding-top: 40px;
+    margin-top: 0px;
+    border: 0px;
+    align-self:flex-start;
 }
-label{
 
-    margin: 10vh;
-    align-self: self-start;
+form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+
+label {
+    display: flex;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 button {
@@ -32,7 +51,6 @@ button {
     font-size: large;
     border-radius: 5px;
     font-weight: bold;
-    align-self: center;
 }
 button:hover{
     background-color: antiquewhite;
@@ -40,4 +58,12 @@ button:hover{
 }
 
 
+a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border: 0.2px solid black;
+    border-radius: 5px;
+}
 
