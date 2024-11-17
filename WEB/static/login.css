@@ -20,7 +20,7 @@ h1{
     text-align: center;
     background-color: #007BFF;
     width: 100%;
-    line-height: 110px;
+    line-height: 120px;
     padding-top: 80px;
     margin-top: 0px;
     border: 0px;
@@ -28,9 +28,11 @@ h1{
 }
 h2{
     text-align: center;
+    margin-top: 30px;
 }
 
 form {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,16 +46,19 @@ label {
 }
 
 button {
-    margin-top: 10px;
-    align-self: center;
+    padding:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 5px;
+    font-weight: bold;
 }
 button:hover{
-    stransition:scale(2.0);
-    background-color: red;
+    background-color: antiquewhite;
+    
 }
-.loginbutton{
-    background-color: aliceblue;
-}
+
 
 a {
     text-decoration: none;
@@ -63,3 +68,4 @@ a {
     border: 0.2px solid black;
     border-radius: 5px;
 }
+
