@@ -60,7 +60,7 @@ def login():
         return redirect(url_for('news_portal'))
     else:
         flash("Invalid username or password. Please try again.")
-        return redirect(url_for('home'))
+        return redirect(url_for('login_page'))
 
 # fiók létrehozása
 @app.route('/account_create', methods=['GET'])
