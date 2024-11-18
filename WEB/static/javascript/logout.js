@@ -1,5 +1,7 @@
-function logoutPopup(){
-    alert("Kijelentkeztél");
+function logout(event) {
+    event.preventDefault();
 
-    window.location.href="{{ url_for('news_portal') }}";
+    localStorage.setItem('loggedOut', 'true');
+
+    window.location.href = "/";
 }

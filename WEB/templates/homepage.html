@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='homepage.css') }}">
+    <script src="{{ url_for('static', filename='javascript/popup.js') }}"></script>
 </head>
 <body>
     <div class="container">
+
+        <div id="popup" class="popup-overlay" style="display: none;">
+            <div class="popup-content">
+                <p>Sikeres Kijelentkezés!</p>
+            </div>
+        </div>
 
         <header>
             <nav>
