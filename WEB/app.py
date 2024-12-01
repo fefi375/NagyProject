@@ -42,25 +42,40 @@ def create_account():
 def login_page():
     return render_template('login.html')
 
-@app.route('/login', methods=['POST'])
+#bannolt fiók
+@app.route('/banned_account')
+def banned_account_page():
+    return render_template('banned_account.html')
+
+@app.route('/login', methods=['POST', 'GET'])
 def login():
     username = request.form['username']
     password = request.form['password']
+    
 
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute('SELECT * FROM users WHERE username = ? AND password = ?', (username, password))
+    cursor.execute('SELECT * FROM users WHERE username = ? AND password = ?',  (username, password))
     user = cursor.fetchone()
     conn.close()
 
+    if user['credit']<=50:
+        return redirect(url_for('banned_account_page'))
+    
     if user:
         session['user_id'] = user['id']
         session['username'] = user['username']
         flash(f"Welcome back, {user['username']}! Your current credit is {user['credit']}.")
         return redirect(url_for('news_portal'))
+    
+  
+        
     else:
         flash("Invalid username or password. Please try again.")
         return redirect(url_for('login_page'))
+    
+    
+
 
 # fiók létrehozása
 @app.route('/account_create', methods=['GET'])
