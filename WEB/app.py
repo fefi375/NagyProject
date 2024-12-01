@@ -61,14 +61,11 @@ def login():
 
     if user['credit']<=50:
         return redirect(url_for('banned_account_page'))
-    
     if user:
         session['user_id'] = user['id']
         session['username'] = user['username']
         flash(f"Welcome back, {user['username']}! Your current credit is {user['credit']}.")
         return redirect(url_for('news_portal'))
-    
-  
         
     else:
         flash("Invalid username or password. Please try again.")
