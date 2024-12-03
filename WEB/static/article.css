@@ -46,3 +46,17 @@ a{
 a:hover{
     transform: scale(1.2);
 }
+
+#vissza{
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    border: none;
+    margin: none;
+    
+}
+img{
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+}

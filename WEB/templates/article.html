@@ -8,8 +8,14 @@
 <body>
     <div id="container">
         <div id="felso_sor">
+
+            <p id="vissza"><a href="{{ url_for('logout') }}" id="visszagomb" onclick="logout(event)"><img src="{{ url_for('static', filename='/Images/logout_icon.jpg') }}" alt="Logout Image"></a></p>
+
             <h1>{{ article['title'] }}</h1>
+
             <p>By: {{ session['username'] }}</p>
+
+            
         </div>
         <div id="kozepso_content">
             <p>{{ article['content'] }}</p>
