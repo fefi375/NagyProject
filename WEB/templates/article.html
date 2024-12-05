@@ -9,7 +9,7 @@
     <div id="container">
         <div id="felso_sor">
 
-            <p id="vissza"><a href="{{ url_for('logout') }}" id="visszagomb" onclick="logout(event)"><img src="{{ url_for('static', filename='/Images/logout_icon.jpg') }}" alt="Logout Image"></a></p>
+            <p id="vissza"><a href="{{ url_for('news_portal') }}"><img src="{{ url_for('static', filename='/Images/logout_icon.jpg') }}" alt="Logout Image"></a></p>
 
             <h1>{{ article['title'] }}</h1>
 
@@ -19,7 +19,6 @@
         </div>
         <div id="kozepso_content">
             <p>{{ article['content'] }}</p>
-            <a href="{{ url_for('news_portal') }}">Back to News Portal</a>
         </div>
     </div>
 </body>
