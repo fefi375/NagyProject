@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
 }
 
 html, body {
@@ -27,9 +28,6 @@ nav ul {
     justify-content: center;
 }
 
-li{
-    width: 100%;
-}
 
 nav li {
     margin: 0 15px;
@@ -85,3 +83,4 @@ footer {
     font-size: 1.5em;
     color: #333;
 }
+
