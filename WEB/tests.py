@@ -31,6 +31,11 @@ class TestApi(unittest.TestCase):
         response=self.tester.get('/account_create')
         statuscode =response.status_code
         self.assertEqual(statuscode, 200)
+        
+    def test_news_portal(self):
+        response=self.tester.get('/news_portal')
+        statuscode =response.status_code
+        self.assertEqual(statuscode, 200)
     
       
 if __name__=="__main__":
