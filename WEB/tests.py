@@ -9,12 +9,13 @@ class TestApi(unittest.TestCase):
     def setUp(self):
         self.testapp=app.app
         self.tester = self.testapp.test_client(self)
-        
+        self.connection=app.get_db_connection()
+        self.cursor=self.connection.cursor()
         
         return self
     
     def tearDown(self):
-        return super().tearDown()
+        pass
    
    
     def test_okresponse_on_homepage(self):
@@ -36,7 +37,14 @@ class TestApi(unittest.TestCase):
         response=self.tester.get('/news_portal')
         statuscode =response.status_code
         self.assertEqual(statuscode, 200)
-    
-      
+        
+    def test_valid_user(self):
+        username='admin1'
+        password=username
+        self.cursor.execute('SELECT * FROM users WHERE username = ? AND password = ?',  (username, password))
+        l=self.cursor.fetchone()
+        self.assertEqual(l["username"], "admin1")
+        self.assertEqual(l["password"], "admin1")
+        
 if __name__=="__main__":
     unittest.main()
