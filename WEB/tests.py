@@ -37,6 +37,7 @@ class TestApi(unittest.TestCase):
         response=self.tester.get('/news_portal')
         statuscode =response.status_code
         self.assertEqual(statuscode, 200)
+    
         
     def test_valid_user(self):
         username='admin1'
@@ -45,6 +46,15 @@ class TestApi(unittest.TestCase):
         l=self.cursor.fetchone()
         self.assertEqual(l["username"], "admin1")
         self.assertEqual(l["password"], "admin1")
+        
+        
+    def test_invalid_user(self):
+        username="nyul"
+        password="nyul"
+        self.cursor.execute('SELECT * FROM users WHERE username = ? AND password = ?',  (username, password))
+        l=self.cursor.fetchone()
+        with self.assertRaises(TypeError):
+            l['username'], l['password']
         
 if __name__=="__main__":
     unittest.main()
