@@ -25,11 +25,14 @@ body {
     margin-bottom: 40px;
     height: 12vh;
     font-size: large;
-    line-height: 15px;
+    line-height: 3.8vh;
 }
 
 #kozepso_content{
     text-align: center;
+    width: 95vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 a{
@@ -56,8 +59,8 @@ a:hover{
     left: 0px;
     border: none;
     margin: none;
-    
 }
+
 img{
     width: 30px;
     height: 30px;
