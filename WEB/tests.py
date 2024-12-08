@@ -11,12 +11,9 @@ class TestApi(unittest.TestCase):
         self.tester = self.testapp.test_client(self)
         self.connection=app.get_db_connection()
         self.cursor=self.connection.cursor()
+        self.censor_data=app.load_censor_list()
         
         return self
-    
-    def tearDown(self):
-        pass
-   
    
     def test_okresponse_on_homepage(self):
       response=self.tester.get('/')
@@ -55,6 +52,16 @@ class TestApi(unittest.TestCase):
         l=self.cursor.fetchone()
         with self.assertRaises(TypeError):
             l['username'], l['password']
+            
+    def test_censor_content(self):
+        szo=app.censor_content('kín', self.censor_data)
+        self.assertEqual(szo[0],'trianon')
+        
+        szo=app.censor_content('cis', self.censor_data)
+        self.assertEqual(szo[0], 'normális')
+        
+        szo=app.censor_content('férfi', self.censor_data)
+        self.assertEqual(szo[0], 'nő')
         
 if __name__=="__main__":
     unittest.main()
