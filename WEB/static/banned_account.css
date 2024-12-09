@@ -1,6 +1,8 @@
 *{
     margin: 0;
+    overflow: hidden;
 }
+
 h1{
     background-color: #007BFF;
     width: 100%;
@@ -10,10 +12,17 @@ h1{
     margin-bottom: 10vh;
     text-align: center;
 }
+
 div{
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
     line-height: 180%;
+}
+
+.container {
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
